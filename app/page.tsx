@@ -69,16 +69,6 @@ export default function Portfolio() {
     }
   ]
 
-  const handleSendEmail = async () => {
-    const emailAddress = "harishkumardhanasekaran3@gmail.com"
-    try {
-      await navigator.clipboard.writeText(emailAddress)
-      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`, "_blank")
-    } catch {
-      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`, "_blank")
-    }
-  }
-
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
@@ -375,9 +365,9 @@ export default function Portfolio() {
                   </div>
                   <h3 className="text-lg font-bold text-white mb-1">Email</h3>
                   <p className="text-slate-400 text-sm mb-4">harishkumardhanasekaran3@gmail.com</p>
-                  <button onClick={handleSendEmail} className="text-cyan-400 hover:text-cyan-300 font-semibold text-sm flex items-center gap-2 transition-colors">
+                  <a href="mailto:harishkumardhanasekaran3@gmail.com" className="text-cyan-400 hover:text-cyan-300 font-semibold text-sm flex items-center gap-2 transition-colors inline-block w-fit">
                     Write me <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/[0.07] hover:border-cyan-500/30 transition-all">
