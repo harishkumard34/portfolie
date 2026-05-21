@@ -145,7 +145,7 @@ export default function Portfolio() {
       <div className="relative z-10">
         
         {/* Hero Section */}
-        <section className="min-h-screen flex items-center justify-center pt-24 px-4 pb-12">
+        <section className="min-h-[85vh] lg:min-h-screen flex items-center justify-center pt-32 lg:pt-24 px-4 pb-16 lg:pb-12">
           <div className="text-center max-w-4xl mx-auto">
             
             <div data-aos="zoom-in" data-aos-delay="100" className="relative w-40 h-40 mx-auto mb-8 rounded-full p-1 bg-white shadow-[0_10px_40px_-10px_rgba(37,99,235,0.2)]">
@@ -160,7 +160,7 @@ export default function Portfolio() {
               Available for Opportunities
             </div>
             
-            <h1 data-aos="fade-up" data-aos-delay="300" className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900">
+            <h1 data-aos="fade-up" data-aos-delay="300" className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900">
               Hi, I'm <br className="md:hidden" />
               <span className="text-blue-600">
                 D. Harish Kumar
@@ -193,7 +193,7 @@ export default function Portfolio() {
         </section>
 
         {/* About & Education */}
-        <section id="about" className="py-24 px-4 bg-white border-y border-slate-100">
+        <section id="about" className="py-16 lg:py-24 px-4 bg-white border-y border-slate-100">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6" data-aos="fade-right">
               <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3 text-slate-900">
@@ -231,7 +231,7 @@ export default function Portfolio() {
         </section>
 
         {/* Experience */}
-        <section id="experience" className="py-24 px-4 bg-slate-50">
+        <section id="experience" className="py-16 lg:py-24 px-4 bg-slate-50">
           <div className="max-w-4xl mx-auto">
             <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold mb-16 text-center text-slate-900">Work Experience</h2>
             
@@ -271,7 +271,7 @@ export default function Portfolio() {
         </section>
 
         {/* Skills */}
-        <section className="py-24 px-4 bg-white border-y border-slate-100">
+        <section className="py-16 lg:py-24 px-4 bg-white border-y border-slate-100">
           <div className="max-w-6xl mx-auto">
             <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold mb-16 text-center text-slate-900">Technical Skills</h2>
             
@@ -296,7 +296,7 @@ export default function Portfolio() {
         </section>
 
         {/* Projects */}
-        <section id="projects" className="py-24 px-4 bg-slate-50">
+        <section id="projects" className="py-16 lg:py-24 px-4 bg-slate-50">
           <div className="max-w-6xl mx-auto">
             <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold mb-16 text-center text-slate-900">Featured Projects</h2>
             
@@ -332,7 +332,7 @@ export default function Portfolio() {
         </section>
 
         {/* Certifications & Achievements */}
-        <section className="py-24 px-4 bg-white border-y border-slate-100">
+        <section className="py-16 lg:py-24 px-4 bg-white border-y border-slate-100">
           <div className="max-w-4xl mx-auto text-center">
             <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold mb-12 flex items-center justify-center gap-3 text-slate-900">
               <Trophy className="w-8 h-8 text-blue-600" />
@@ -372,7 +372,7 @@ export default function Portfolio() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="py-24 px-4 relative overflow-hidden bg-slate-50">
+        <section id="contact" className="py-16 lg:py-24 px-4 relative overflow-hidden bg-slate-50">
           <div className="max-w-4xl mx-auto relative z-10">
             <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Let's Build Something Great</h2>
