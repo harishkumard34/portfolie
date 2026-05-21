@@ -163,7 +163,7 @@ export default function Portfolio() {
                 View My Work
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="/resume.pdf" download="Harish_Kumar_Resume.pdf" className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105">
+              <a href="/D_Harish_Kumar_Resume.pdf" download="Harish_Kumar_Resume.pdf" className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105">
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>
