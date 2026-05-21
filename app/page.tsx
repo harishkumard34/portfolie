@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Github, Linkedin, ExternalLink, Mail, Code2, Database, Zap, Smartphone, Server, Cloud, ShieldCheck, Trophy, Phone, Briefcase, GraduationCap, ArrowRight } from "lucide-react"
+import { Github, Linkedin, ExternalLink, Mail, Code2, Database, Zap, Smartphone, Server, Cloud, ShieldCheck, Trophy, Phone, Briefcase, GraduationCap, ArrowRight, Download } from "lucide-react"
 import { useState } from "react"
 
 export default function Portfolio() {
@@ -73,16 +73,24 @@ export default function Portfolio() {
     e.preventDefault()
     setIsLoading(true)
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
-          email,
-          message,
-          toEmail: "harishkumardhanasekaran3@gmail.com",
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE", // Go to web3forms.com to get this
+          email: email,
+          message: message,
+          subject: "New Message from Portfolio",
+          from_name: "Portfolio Contact Form",
         }),
       })
-      if (response.ok) {
+      
+      const result = await response.json()
+      
+      if (result.success) {
         setSubmitStatus("success")
         setEmail("")
         setMessage("")
@@ -127,6 +135,10 @@ export default function Portfolio() {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center pt-20 px-4">
           <div className="text-center max-w-4xl mx-auto">
+            <div className="relative w-40 h-40 mx-auto mb-8 rounded-full p-1 bg-gradient-to-br from-blue-500 to-cyan-400 shadow-[0_0_30px_rgba(6,182,212,0.3)] hover:shadow-[0_0_40px_rgba(6,182,212,0.5)] transition-shadow duration-300">
+              <img src="/profile.jpg" alt="D. Harish Kumar" className="w-full h-full object-cover rounded-full border-4 border-slate-950" />
+            </div>
+
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-300 text-sm font-medium mb-8 shadow-[0_0_15px_rgba(6,182,212,0.1)]">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -150,6 +162,10 @@ export default function Portfolio() {
               <a href="#projects" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
                 View My Work
                 <ArrowRight className="w-5 h-5" />
+              </a>
+              <a href="/resume.pdf" download="Harish_Kumar_Resume.pdf" className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105">
+                <Download className="w-5 h-5" />
+                Download Resume
               </a>
               <a href="https://github.com/harishkumard34" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105">
                 <Github className="w-5 h-5" />
