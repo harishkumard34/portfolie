@@ -32,8 +32,8 @@ export default function Portfolio() {
     },
     {
       title: "TravelBuddy AI",
-      description: "Built an autonomous multi-agent AI travel assistant using LangGraph and FastAPI that intelligently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
-      tags: ["FastAPI", "React.js", "LangGraph", "LLMs"],
+      description: "Built an intelligent AI travel assistant using LangChain and FastAPI that efficiently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
+      tags: ["FastAPI", "React.js", "LangChain", "LLMs"],
       link: "https://github.com/harishkumard34",
       image: "/travel-buddy.png"
     },
