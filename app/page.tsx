@@ -199,7 +199,7 @@ export default function Portfolio() {
               </h2>
               <div className="prose prose-lg text-slate-600">
                 <p>
-                  I'm a <strong>Full Stack AI Engineer</strong>. Over the last 2 months, I've intensely upskilled to bridge the gap between traditional web development and autonomous AI. I now specialize in building production-grade agentic workflows using <strong>LangChain, LangGraph, and RAG</strong> architectures.
+                  I'm a <strong>Full Stack AI Engineer</strong> specializing in building production-grade agentic workflows using <strong>LangChain, LangGraph, and RAG</strong> architectures. I bridge the gap between traditional scalable web development and cutting-edge autonomous AI.
                 </p>
                 <p>
                   My expertise spans from building highly concurrent backends (FastAPI, Spring Boot) to engineering advanced AI systems utilizing <strong>Vector Databases, Vectorless DB hybrid search, Deep Agents, LLM Gateways, LLM Evals, and Guardrails</strong>. I don't just build wrappers; I architect scalable, reliable enterprise automation.
