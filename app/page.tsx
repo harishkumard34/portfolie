@@ -28,18 +28,21 @@ export default function Portfolio() {
       description: "Architected a full-stack Enterprise ESG data pipeline. Engineered a dual-system architecture featuring a high-speed VectorDB RAG Chatbot for instant policy querying, and an advanced multi-agent LangGraph workflow for automated anomaly detection in sustainability reports.",
       tags: ["React.js", "Python", "FastAPI", "LangGraph", "Llama-3"],
       link: "https://github.com/harishkumard34",
+      image: "/esg-project.png"
     },
     {
       title: "TravelBuddy AI",
       description: "Built an autonomous multi-agent AI travel assistant using LangGraph and FastAPI that intelligently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
       tags: ["FastAPI", "React.js", "LangGraph", "LLMs"],
       link: "https://github.com/harishkumard34",
+      image: "/travel-buddy.png"
     },
     {
       title: "Smart Service Booking Platform",
       description: "Developed a high-performance full-stack service booking platform (Urban Worker Architecture) matching local professionals with customers. Implemented secure JWT RBAC pipelines and optimized PostgreSQL RESTful APIs via FastAPI.",
       tags: ["FastAPI", "React.js", "PostgreSQL", "JWT"],
       link: "https://github.com/harishkumard34",
+      image: "/smart-platform.png"
     },
   ]
 
@@ -299,8 +302,12 @@ export default function Portfolio() {
             <div className="grid lg:grid-cols-3 gap-8">
               {projects.map((project, idx) => (
                 <div key={idx} data-aos="flip-up" data-aos-delay={idx * 100} className="group flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-blue-200 transition-all duration-500 hover:-translate-y-2">
-                  <div className="h-48 bg-slate-100 p-8 flex items-center justify-center relative overflow-hidden border-b border-slate-200">
-                    <Code2 className="w-16 h-16 text-slate-300 group-hover:scale-110 group-hover:text-blue-500 transition-all duration-500 relative z-10" />
+                  <div className="h-48 bg-slate-100 flex items-center justify-center relative overflow-hidden border-b border-slate-200">
+                    {project.image ? (
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    ) : (
+                      <Code2 className="w-16 h-16 text-slate-300 group-hover:scale-110 group-hover:text-blue-500 transition-all duration-500 relative z-10" />
+                    )}
                   </div>
                   
                   <div className="p-8 flex flex-col flex-grow">
