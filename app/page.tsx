@@ -27,14 +27,16 @@ export default function Portfolio() {
       title: "AI ESG Pipeline",
       description: "Architected a full-stack Enterprise ESG data pipeline. Engineered a dual-system architecture featuring a high-speed VectorDB RAG Chatbot for instant policy querying, and an advanced multi-agent LangGraph workflow for automated anomaly detection in sustainability reports.",
       tags: ["React.js", "Python", "FastAPI", "LangGraph", "Llama-3"],
-      link: "https://github.com/harishkumard34",
+      link: "https://github.com/harishkumard34/AI-ESG-Pipeline",
+      liveLink: "https://ai-esg-pipeline.vercel.app/dashboard",
       image: "/esg-project.png"
     },
     {
       title: "TravelBuddy AI",
       description: "Built an intelligent AI travel assistant using LangChain and FastAPI that efficiently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
       tags: ["FastAPI", "React.js", "LangChain", "LLMs"],
-      link: "https://github.com/harishkumard34",
+      link: "https://github.com/harishkumard34/TravelbuddyAI",
+      liveLink: "https://hilarious-queijadas-17a3e8.netlify.app/",
       image: "/travel-buddy.png"
     },
     {
@@ -324,9 +326,16 @@ export default function Portfolio() {
                       ))}
                     </div>
                     
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-bold transition-colors group/link mt-auto">
-                      View Source <ExternalLink className="w-4 h-4 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
-                    </a>
+                    <div className="flex flex-wrap gap-6 mt-auto">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 font-bold transition-colors group/link">
+                        <Github className="w-4 h-4" /> Source
+                      </a>
+                      {project.liveLink && (
+                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-bold transition-colors group/link">
+                          Live Demo <ExternalLink className="w-4 h-4 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
