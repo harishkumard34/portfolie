@@ -5,6 +5,7 @@ import { Github, Linkedin, ExternalLink, Mail, Code2, Database, Zap, Smartphone,
 import { useState, useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Chatbot from "@/components/Chatbot"
 
 export default function Portfolio() {
   const [email, setEmail] = useState("")
@@ -23,47 +24,44 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "AI ESG Pipeline",
+      description: "Architected a full-stack Enterprise ESG data pipeline. Engineered a dual-system architecture featuring a high-speed VectorDB RAG Chatbot for instant policy querying, and an advanced multi-agent LangGraph workflow for automated anomaly detection in sustainability reports.",
+      tags: ["React.js", "Python", "FastAPI", "LangGraph", "Llama-3"],
+      link: "https://github.com/harishkumard34",
+    },
+    {
+      title: "TravelBuddy AI",
+      description: "Built an autonomous multi-agent AI travel assistant using LangGraph and FastAPI that intelligently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
+      tags: ["FastAPI", "React.js", "LangGraph", "LLMs"],
+      link: "https://github.com/harishkumard34",
+    },
+    {
       title: "Smart Service Booking Platform",
-      description:
-        "Full-stack web application with secure JWT authentication, role-based access control, and payment integration. Optimized RESTful APIs and MongoDB queries, improving performance by 50%. Built interactive dashboards leading to 35% higher user retention.",
-      tags: ["Spring Boot", "React.js", "MongoDB", "REST API", "Razorpay"],
-      link: "https://github.com/harishkumard34",
-    },
-    {
-      title: "ShoperAI",
-      description:
-        "Developed an AI-driven e-commerce platform that leverages machine learning for personalized product recommendations. Implemented user authentication, dynamic product catalog, and secure checkout using Node.js and MongoDB. The recommendation engine improved user engagement by serving targeted content and optimizing the shopping experience.",
-      tags: ["React.js", "Node.js", "MongoDB", "AI"],
-      link: "https://github.com/harishkumard34",
-    },
-    {
-      title: "CareerPath",
-      description: "Built a comprehensive career guidance platform utilizing FastAPI and React.js. It features ML-powered personalized learning roadmaps based on user skills and goals. Integrated Firebase for real-time data sync and user management, providing a seamless experience for students navigating complex career choices.",
-      tags: ["FastAPI", "React.js", "Firebase", "ML"],
+      description: "Developed a high-performance full-stack service booking platform (Urban Worker Architecture) matching local professionals with customers. Implemented secure JWT RBAC pipelines and optimized PostgreSQL RESTful APIs via FastAPI.",
+      tags: ["FastAPI", "React.js", "PostgreSQL", "JWT"],
       link: "https://github.com/harishkumard34",
     },
   ]
 
   const skills = [
-    { title: "Languages", icon: <Code2 />, items: ["Java", "Python", "JavaScript", "TypeScript", "Dart", "SQL"] },
-    { title: "Mobile Dev", icon: <Smartphone />, items: ["Flutter", "Provider", "FCM", "Play Store Deployment"] },
-    { title: "Frontend", icon: <Code2 />, items: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Svelte 5"] },
-    { title: "Backend", icon: <Server />, items: ["Spring Boot", "Django", "Node.js", "Express.js", "FastAPI"] },
-    { title: "Databases", icon: <Database />, items: ["PostgreSQL", "MongoDB", "MySQL", "Firebase Firestore"] },
-    { title: "Cloud & Tools", icon: <Cloud />, items: ["AWS", "Hostinger VPS", "Git", "Postman", "Razorpay"] },
+    { title: "AI & Agentic", icon: <Zap />, items: ["LangChain", "LangGraph", "RAG", "Prompt Engineering", "Llama-3"] },
+    { title: "Advanced AI", icon: <Database />, items: ["Vector Databases", "Vectorless DB", "LLM Gateways", "LLM Evals"] },
+    { title: "Frontend", icon: <Code2 />, items: ["React.js", "Svelte 5", "Flutter", "Tailwind CSS"] },
+    { title: "Backend", icon: <Server />, items: ["Python", "FastAPI", "Django", "Spring Boot", "SMTP/IMAP"] },
+    { title: "Cloud & DevOps", icon: <Cloud />, items: ["Docker", "Kubernetes", "AWS", "Jenkins", "GitHub Actions"] },
+    { title: "Databases", icon: <Database />, items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Firebase"] },
   ]
 
   const experiences = [
     {
-      role: "Full Stack Developer Intern",
+      role: "Full Stack Developer",
       company: "Cloudrule Technologies Private Limited",
       location: "Madurai, India",
       period: "March 2026 – Present",
       achievements: [
-        "Developed and deployed the complete RoyalFishShop mobile application (Admin & User apps) using Flutter, Django REST Framework, and MySQL.",
-        "Built scalable Flutter frontend architecture using Provider state management, REST API integration, and JSON serialization.",
-        "Implemented Firebase Cloud Messaging (FCM) for push notifications, 4-digit OTP authentication, and Razorpay payment gateway.",
-        "Deployed Django backend on Hostinger VPS and published Flutter apps to the Google Play Store."
+        "Architected and deployed the production-grade RoyalFishShop ecosystem handling end-to-end e-commerce workflows using Flutter, Django, and MySQL.",
+        "Engineered scalable backend infrastructure on Hostinger VPS, integrating Razorpay APIs and Firebase Cloud Messaging (FCM).",
+        "Led the complete release cycle from local development to Google Play Store deployment, performing comprehensive unit testing.",
       ]
     },
     {
@@ -72,10 +70,9 @@ export default function Portfolio() {
       location: "Madurai, India",
       period: "November 2024 – February 2025",
       achievements: [
-        "Developed a SaaS CRM product using Spring Boot (backend), Svelte 5 (frontend), and PostgreSQL.",
-        "Designed and implemented SMTP-based email sending and an IMAP-based email receiving service using entity and repository patterns.",
-        "Created reusable bulk email templates and a Gmail-like compose UI with rich text formatting.",
-        "Configured secure CORS policies to enable seamless cross-origin communication."
+        "Built a highly responsive CRM web application combining a robust Spring Boot backend with a modern Svelte 5 frontend.",
+        "Engineered secure email integration pipelines using SMTP and IMAP protocols for automated client communication.",
+        "Designed scalable PostgreSQL schemas for complex CRUD operations, optimizing data retrieval for customer profiles.",
       ]
     }
   ]
@@ -168,7 +165,7 @@ export default function Portfolio() {
             </h1>
             
             <p data-aos="fade-up" data-aos-delay="400" className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Results-driven Full Stack Developer building scalable, production-grade web and mobile applications.
+              AI Agentic Developer & Scalable Systems Builder bridging raw AI capabilities with enterprise automation.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="500">
@@ -474,6 +471,7 @@ export default function Portfolio() {
           </p>
         </footer>
       </div>
+      <Chatbot />
     </div>
   )
 }
