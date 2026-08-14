@@ -22,8 +22,11 @@ export default function Chatbot() {
   const getBotResponse = (query: string) => {
     const q = query.toLowerCase()
     
+    if (q.includes("who") || q.includes("about") || q.includes("harish") || q.includes("profile") || q.includes("developer") || q.includes("haarsih")) {
+      return "Harish Kumar is a Full Stack AI Engineer. He specializes in building scalable web applications and advanced AI Agentic workflows using LangChain, LangGraph, and Vector Databases."
+    }
     if (q.includes("skill") || q.includes("tech") || q.includes("stack") || q.includes("tools")) {
-      return "Harish is an AI Agentic Developer. His top skills include LangGraph, LangChain, RAG, Llama-3, Vector Databases, Python, FastAPI, React.js, and Docker."
+      return "His top skills include LangGraph, LangChain, RAG, Llama-3, Vector Databases, Python, FastAPI, React.js, and Docker."
     }
     if (q.includes("experience") || q.includes("work") || q.includes("intern") || q.includes("job")) {
       return "He works at Cloudrule Tech (Mar 2026-Present) where he built the RoyalFishShop ecosystem, and interned at Techpuram (Nov 2024-Feb 2025) building CRM systems with SMTP/IMAP integration."
@@ -68,7 +71,7 @@ export default function Chatbot() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 z-50 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5">
+        <div className="fixed bottom-24 right-6 w-96 sm:w-[28rem] bg-white rounded-2xl shadow-2xl border border-slate-200 z-50 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5">
           {/* Header */}
           <div className="bg-blue-600 p-4 text-white flex items-center gap-3">
             <div className="p-2 bg-white/20 rounded-full">
@@ -81,7 +84,7 @@ export default function Chatbot() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 h-80 overflow-y-auto bg-slate-50 flex flex-col gap-3">
+          <div className="flex-1 p-4 h-96 overflow-y-auto bg-slate-50 flex flex-col gap-3">
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex gap-2 max-w-[85%] ${msg.role === "user" ? "ml-auto flex-row-reverse" : "mr-auto"}`}>
                 <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${msg.role === "user" ? "bg-slate-200 text-slate-600" : "bg-blue-100 text-blue-600"}`}>
