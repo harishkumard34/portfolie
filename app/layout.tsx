@@ -8,10 +8,42 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "D. Harish Kumar - Full Stack Developer",
+  title: "D. Harish Kumar | Full Stack AI Engineer & Agentic Developer",
   description:
-    "Portfolio of Harish Kumar, Full Stack Developer specializing in building scalable web and AI-powered applications with Spring Boot, React.js, and FastAPI.",
-  generator: "v0.app",
+    "Portfolio of D. Harish Kumar, a Full Stack AI Engineer specializing in building production-grade Agentic workflows, LangGraph pipelines, RAG systems, and scalable web applications.",
+  keywords: [
+    "Harish Kumar",
+    "Agentic AI",
+    "Full Stack Developer",
+    "AI Engineer",
+    "LangGraph",
+    "LangChain",
+    "RAG",
+    "FastAPI",
+    "React.js",
+    "Spring Boot",
+    "Madurai"
+  ],
+  authors: [{ name: "D. Harish Kumar" }],
+  creator: "D. Harish Kumar",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://portfolie-eta.vercel.app/",
+    title: "D. Harish Kumar | Full Stack AI Engineer",
+    description: "Architecting autonomous AI systems, RAG pipelines, and highly scalable enterprise applications.",
+    siteName: "D. Harish Kumar Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "D. Harish Kumar | Full Stack AI Engineer",
+    description: "Architecting autonomous AI systems, RAG pipelines, and highly scalable enterprise applications.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  generator: "Next.js",
   icons: {
     icon: [
       {
