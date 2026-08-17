@@ -287,7 +287,7 @@ export default function Portfolio() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {skills.map((skill, idx) => (
-                <div key={idx} data-aos="fade-up" data-aos-delay={idx * 50} className="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                <div key={idx} data-aos="fade-up" data-aos-delay={idx * 50} className={`bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ${idx === 0 ? 'md:col-span-2' : ''}`}>
                   <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 mb-6">
                     {skill.icon}
                   </div>
