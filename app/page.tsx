@@ -25,36 +25,35 @@ export default function Portfolio() {
   const projects = [
     {
       title: "AI ESG Pipeline",
-      description: "Architected a full-stack Enterprise ESG data pipeline. Engineered a dual-system architecture featuring a high-speed VectorDB RAG Chatbot for instant policy querying, and an advanced multi-agent LangGraph workflow for automated anomaly detection in sustainability reports.",
-      tags: ["React.js", "Python", "FastAPI", "LangGraph", "Llama-3"],
+      description: "Engineered a Multi-Agent state-machine workflow using LangGraph to orchestrate specialized AI agents that automatically process, validate, and extract anomalies from dense ESG reports. Developed a high-speed RAG chatbot utilizing a hybrid Vector and Vectorless DB architecture.",
+      tags: ["FastAPI", "LangGraph", "VectorDB", "React.js"],
       link: "https://github.com/harishkumard34/AI-ESG-Pipeline",
       liveLink: "https://ai-esg-pipeline.vercel.app/dashboard",
       image: "/esg-project.png"
     },
     {
       title: "TravelBuddy AI",
-      description: "Built an intelligent AI travel assistant using LangChain and FastAPI that efficiently researches destinations, retrieves dynamic data, and generates personalized itineraries. Advanced prompt engineering ensures strictly structured JSON responses.",
-      tags: ["FastAPI", "React.js", "LangChain", "LLMs"],
+      description: "Built an autonomous multi-agent AI travel assistant using LangChain and FastAPI that intelligently researches global destinations and dynamically generates personalized itineraries. Implemented advanced Prompt Engineering strategies to enforce strictly structured JSON outputs.",
+      tags: ["Python", "LangChain", "FastAPI", "LLMs"],
       link: "https://github.com/harishkumard34/TravelbuddyAI",
       liveLink: "https://hilarious-queijadas-17a3e8.netlify.app/",
       image: "/travel-buddy.png"
     },
     {
       title: "Smart Service Booking Platform",
-      description: "Developed a high-performance full-stack service booking platform (Urban Worker Architecture) matching local professionals with customers. Implemented secure JWT RBAC pipelines and optimized PostgreSQL RESTful APIs via FastAPI.",
-      tags: ["FastAPI", "React.js", "PostgreSQL", "JWT"],
+      description: "Developed a comprehensive 3-part ecosystem (User App, Worker App, and Admin Dashboard) matching local professionals with customers. Implemented secure JWT RBAC pipelines and optimized RESTful APIs via FastAPI and PostgreSQL.",
+      tags: ["React.js", "FastAPI", "PostgreSQL", "JWT"],
       link: "https://github.com/harishkumard34",
       image: "/smart-platform.png"
     },
   ]
 
   const skills = [
-    { title: "AI & Agentic", icon: <Zap />, items: ["LangChain", "LangGraph", "RAG", "Prompt Engineering", "Llama-3"] },
-    { title: "Advanced AI", icon: <Database />, items: ["Vector Databases", "Vectorless DB", "LLM Gateways", "LLM Evals"] },
-    { title: "Frontend", icon: <Code2 />, items: ["React.js", "Svelte 5", "Flutter", "Tailwind CSS"] },
-    { title: "Backend", icon: <Server />, items: ["Python", "FastAPI", "Django", "Spring Boot", "SMTP/IMAP"] },
-    { title: "Cloud & DevOps", icon: <Cloud />, items: ["Docker", "Kubernetes", "AWS", "Jenkins", "GitHub Actions"] },
-    { title: "Databases", icon: <Database />, items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Firebase"] },
+    { title: "AI & Agentic Systems", icon: <Zap />, items: ["LangChain", "LangGraph", "RAG", "Prompt Engineering", "Llama-3", "Vector Databases", "Vectorless DB", "LLM Gateways", "LLM Evals"] },
+    { title: "Backend Development", icon: <Server />, items: ["Python", "FastAPI", "Django", "Spring Boot", "Node.js", "REST APIs", "SMTP", "IMAP"] },
+    { title: "Frontend Development", icon: <Code2 />, items: ["React.js", "Svelte 5", "Flutter", "Tailwind CSS", "HTML5", "CSS3"] },
+    { title: "Databases & Cloud", icon: <Cloud />, items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Supabase", "Docker", "Kubernetes", "AWS", "Hostinger VPS"] },
+    { title: "Integrations & Tools", icon: <Database />, items: ["Razorpay API", "FCM", "Cursor", "Git", "Postman", "VS Code", "npm"] },
   ]
 
   const experiences = [
@@ -64,9 +63,9 @@ export default function Portfolio() {
       location: "Madurai, India",
       period: "March 2026 – Present",
       achievements: [
-        "Architected and deployed the production-grade RoyalFishShop ecosystem handling end-to-end e-commerce workflows using Flutter, Django, and MySQL.",
-        "Engineered scalable backend infrastructure on Hostinger VPS, integrating Razorpay APIs and Firebase Cloud Messaging (FCM).",
-        "Led the complete release cycle from local development to Google Play Store deployment, performing comprehensive unit testing.",
+        "Architected the production-grade RoyalFishShop e-commerce ecosystem, engineering the mobile applications and RESTful backend using Flutter, Django, and MySQL.",
+        "Deployed scalable backend infrastructure on Hostinger VPS, successfully integrating Razorpay API for transactions and Firebase Cloud Messaging (FCM) for real-time alerts.",
+        "Optimized frontend architecture using Provider state management and streamlined JSON serialization, significantly reducing UI latency and improving application stability.",
       ]
     },
     {
@@ -75,9 +74,9 @@ export default function Portfolio() {
       location: "Madurai, India",
       period: "November 2024 – February 2025",
       achievements: [
-        "Built a highly responsive CRM web application combining a robust Spring Boot backend with a modern Svelte 5 frontend.",
-        "Engineered secure email integration pipelines using SMTP and IMAP protocols for automated client communication.",
-        "Designed scalable PostgreSQL schemas for complex CRUD operations, optimizing data retrieval for customer profiles.",
+        "Engineered a highly responsive SaaS CRM platform, combining a robust Spring Boot backend architecture with a modern Svelte 5 frontend client.",
+        "Built secure email integration pipelines using SMTP and IMAP protocols, enabling automated bulk client communication and real-time inbox synchronization.",
+        "Designed scalable PostgreSQL database schemas for complex CRUD operations, optimizing data retrieval for customer profiles using entity and repository design patterns.",
       ]
     }
   ]
@@ -170,7 +169,7 @@ export default function Portfolio() {
             </h1>
             
             <p data-aos="fade-up" data-aos-delay="400" className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              AI Agentic Developer & Scalable Systems Builder bridging raw AI capabilities with enterprise automation.
+              Full Stack AI Engineer specializing in production-grade autonomous workflows and highly scalable enterprise architectures.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="500">
@@ -204,10 +203,10 @@ export default function Portfolio() {
               </h2>
               <div className="prose prose-lg text-slate-600">
                 <p>
-                  I'm a <strong>Full Stack AI Engineer</strong> specializing in building production-grade agentic workflows using <strong>LangChain, LangGraph, and RAG</strong> architectures. I bridge the gap between traditional scalable web development and cutting-edge autonomous AI.
+                  I am a <strong>Full Stack AI Engineer</strong> specializing in production-grade autonomous workflows and highly scalable architectures. My expertise lies in orchestrating multi-agent pipelines (<strong>LangGraph, LangChain</strong>) and optimizing RAG systems with <strong>VectorDBs and Llama-3</strong>.
                 </p>
                 <p>
-                  My expertise spans from building highly concurrent backends (FastAPI, Spring Boot) to engineering advanced AI systems utilizing <strong>Vector Databases, Vectorless DB hybrid search, Deep Agents, LLM Gateways, LLM Evals, and Guardrails</strong>. I don't just build wrappers; I architect scalable, reliable enterprise automation.
+                  I have a proven ability to architect full-stack enterprise solutions integrating modern backends (<strong>FastAPI, Django, Spring Boot</strong>) with complex cloud infrastructure and secure deployments. I am passionate about bridging raw LLM capabilities with enterprise automation.
                 </p>
               </div>
             </div>
@@ -332,7 +331,7 @@ export default function Portfolio() {
                       </a>
                       {project.liveLink && (
                         <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-bold transition-colors group/link">
-                          Live Demo <ExternalLink className="w-4 h-4 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
+                          Live Link <ExternalLink className="w-4 h-4 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
                         </a>
                       )}
                     </div>
