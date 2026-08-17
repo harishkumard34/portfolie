@@ -66,7 +66,8 @@ export default function Portfolio() {
         "Architected the production-grade RoyalFishShop e-commerce ecosystem, engineering the mobile applications and RESTful backend using Flutter, Django, and MySQL.",
         "Deployed scalable backend infrastructure on Hostinger VPS, successfully integrating Razorpay API for transactions and Firebase Cloud Messaging (FCM) for real-time alerts.",
         "Optimized frontend architecture using Provider state management and streamlined JSON serialization, significantly reducing UI latency and improving application stability.",
-      ]
+      ],
+      link: { text: "Play Store (Royal Seafoods)", url: "https://play.google.com/store/apps/details?id=com.royalseafoods.customer&pcampaignid=web_share" }
     },
     {
       role: "Full Stack Developer Intern",
@@ -77,7 +78,8 @@ export default function Portfolio() {
         "Engineered a highly responsive SaaS CRM platform, combining a robust Spring Boot backend architecture with a modern Svelte 5 frontend client.",
         "Built secure email integration pipelines using SMTP and IMAP protocols, enabling automated bulk client communication and real-time inbox synchronization.",
         "Designed scalable PostgreSQL database schemas for complex CRUD operations, optimizing data retrieval for customer profiles using entity and repository design patterns.",
-      ]
+      ],
+      link: { text: "Magudam CRM", url: "https://magudamcrm.com/" }
     }
   ]
 
@@ -263,6 +265,14 @@ export default function Portfolio() {
                         </li>
                       ))}
                     </ul>
+                    {exp.link && (
+                      <div className="mt-6 pt-6 border-t border-slate-100">
+                        <a href={exp.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-bold transition-colors group/link text-sm bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-lg w-fit">
+                          <ExternalLink className="w-4 h-4 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
+                          {exp.link.text}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
