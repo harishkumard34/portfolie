@@ -366,13 +366,23 @@ export default function Portfolio() {
                   Certifications
                 </h3>
                 <ul className="space-y-4">
-                  <li className="flex items-start gap-3 text-slate-700 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                  <li className="flex items-start gap-3 text-slate-700 bg-white p-3 rounded-lg border border-slate-200 shadow-sm hover:border-blue-300 transition-colors">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
-                    <span><strong>Java Programming</strong> <br/><span className="text-sm text-slate-500 font-medium">NPTEL Certified</span></span>
+                    <span>
+                      <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs43/Course/NPTEL24CS43S96110125630499441.pdf" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-blue-600 transition-colors flex items-center gap-1">
+                        Java Programming <ExternalLink className="w-3 h-3" />
+                      </a>
+                      <span className="text-sm text-slate-500 font-medium">NPTEL Certified</span>
+                    </span>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-700 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                  <li className="flex items-start gap-3 text-slate-700 bg-white p-3 rounded-lg border border-slate-200 shadow-sm hover:border-blue-300 transition-colors">
                     <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
-                    <span><strong>Introduction to Internet of Things</strong> <br/><span className="text-sm text-slate-500 font-medium">NPTEL Certified</span></span>
+                    <span>
+                      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs44/Course/NPTEL25CS44S35100121304356821.pdf" target="_blank" rel="noopener noreferrer" className="font-bold hover:text-blue-600 transition-colors flex items-center gap-1">
+                        Introduction to Internet of Things <ExternalLink className="w-3 h-3" />
+                      </a>
+                      <span className="text-sm text-slate-500 font-medium">NPTEL Certified</span>
+                    </span>
                   </li>
                 </ul>
               </div>
