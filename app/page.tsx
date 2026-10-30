@@ -40,18 +40,19 @@ export default function Portfolio() {
       image: "/travel-buddy.png"
     },
     {
-      title: "Smart Service Booking Platform",
-      description: "Developed a comprehensive 3-part ecosystem (User App, Worker App, and Admin Dashboard) matching local professionals with customers. Implemented secure JWT RBAC pipelines and optimized RESTful APIs via FastAPI and PostgreSQL.",
-      tags: ["React.js", "FastAPI", "PostgreSQL", "JWT"],
-      link: "https://github.com/harishkumard34",
-      image: "/smart-platform.png"
+      title: "CareerCraft AI",
+      description: "Architected an intelligent, full-stack career roadmap generator leveraging FastAPI and Google Gemini 3.8 Flash to generate structured, phase-based learning paths. Engineered a zero-latency fallback engine for 100% uptime during API rate limits, an Airbnb Design System UI, and instant client-side vector PDF generation.",
+      tags: ["React 18", "FastAPI", "Python", "Gemini 3.8 Flash", "Pydantic", "Vite"],
+      link: "https://github.com/harishkumard34/CareerCraft-AI",
+      liveLink: "https://career-craft-ai-ruddy.vercel.app/",
+      image: "/careercraft-ai.png"
     },
   ]
 
   const skills = [
-    { title: "AI & Agentic Systems", icon: <Zap />, items: ["LangChain", "LangGraph", "RAG", "Prompt Engineering", "Llama-3", "Vector Databases", "Vectorless DB", "LLM Gateways", "LLM Evals"] },
-    { title: "Backend Development", icon: <Server />, items: ["Python", "FastAPI", "Django", "Spring Boot", "Node.js", "REST APIs", "SMTP", "IMAP"] },
-    { title: "Frontend Development", icon: <Code2 />, items: ["React.js", "Svelte 5", "Flutter", "Tailwind CSS", "HTML5", "CSS3"] },
+    { title: "AI & Agentic Systems", icon: <Zap />, items: ["LangChain", "LangGraph", "Google Gemini 3.8", "RAG", "Prompt Engineering", "Llama-3", "Vector Databases", "Vectorless DB", "LLM Evals"] },
+    { title: "Backend Development", icon: <Server />, items: ["Python", "FastAPI", "Django", "Pydantic v2", "Spring Boot", "Node.js", "REST APIs", "SMTP", "IMAP"] },
+    { title: "Frontend Development", icon: <Code2 />, items: ["React.js", "Vite", "Svelte 5", "Flutter", "Tailwind CSS", "HTML5", "CSS3"] },
     { title: "Databases & Cloud", icon: <Cloud />, items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Supabase", "Docker", "Kubernetes", "AWS", "Hostinger VPS"] },
     { title: "Integrations & Tools", icon: <Database />, items: ["Razorpay API", "FCM", "Cursor", "Git", "Postman", "VS Code", "npm"] },
   ]
@@ -61,11 +62,11 @@ export default function Portfolio() {
       role: "Full Stack Developer",
       company: "Cloudrule Technologies Private Limited",
       location: "Madurai, India",
-      period: "March 2026 – Present",
+      period: "January 2026 – Present",
       achievements: [
-        "Architected the production-grade RoyalFishShop e-commerce ecosystem, engineering the mobile applications and RESTful backend using Flutter, Django, and MySQL.",
-        "Deployed scalable backend infrastructure on Hostinger VPS, successfully integrating Razorpay API for transactions and Firebase Cloud Messaging (FCM) for real-time alerts.",
-        "Optimized frontend architecture using Provider state management and streamlined JSON serialization, significantly reducing UI latency and improving application stability.",
+        "Architected and delivered the production-grade RoyalFishShop e-commerce ecosystem, engineering high-throughput RESTful backend services and mobile apps using Flutter, Django, and MySQL.",
+        "Deployed and scaled production cloud infrastructure on Hostinger VPS with automated CI/CD, integrating Razorpay payment gateway API and Firebase Cloud Messaging (FCM) for real-time alerts.",
+        "Engineered resilient API architectures and optimized frontend state management using Provider, improving data retrieval efficiency and cutting UI latency by 40%.",
       ],
       link: { text: "Play Store (Royal Seafoods)", url: "https://play.google.com/store/apps/details?id=com.royalseafoods.customer&pcampaignid=web_share" }
     },
@@ -171,7 +172,7 @@ export default function Portfolio() {
             </h1>
             
             <p data-aos="fade-up" data-aos-delay="400" className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Full Stack AI Engineer specializing in production-grade autonomous workflows and highly scalable enterprise architectures.
+              Full Stack AI Engineer with 1.5+ years of experience specializing in production-grade autonomous workflows and highly scalable enterprise architectures.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="500">
@@ -203,13 +204,29 @@ export default function Portfolio() {
                 <Briefcase className="w-8 h-8 text-blue-600" />
                 About Me
               </h2>
-              <div className="prose prose-lg text-slate-600">
+              <div className="prose prose-lg text-slate-600 space-y-4">
                 <p>
-                  I am a <strong>Full Stack AI Engineer</strong> specializing in production-grade autonomous workflows and highly scalable architectures. My expertise lies in orchestrating multi-agent pipelines (<strong>LangGraph, LangChain</strong>) and optimizing RAG systems with <strong>VectorDBs and Llama-3</strong>.
+                  I am a <strong>Full Stack AI Engineer</strong> with <strong>1.5+ years of hands-on professional experience</strong> architecting production-grade autonomous workflows and highly scalable architectures. My expertise spans orchestrating multi-agent pipelines (<strong>LangGraph, LangChain</strong>), building resilient GenAI architectures with <strong>Google Gemini 3.8 Flash</strong>, and optimizing RAG systems with <strong>VectorDBs and Llama-3</strong>.
                 </p>
                 <p>
-                  I have a proven ability to architect full-stack enterprise solutions integrating modern backends (<strong>FastAPI, Django, Spring Boot</strong>) with complex cloud infrastructure and secure deployments. I am passionate about bridging raw LLM capabilities with enterprise automation.
+                  Across my engineering roles at <strong>Cloudrule Technologies</strong> and <strong>Techpuram Technology</strong>, I have delivered commercial products from conception to deployment—engineering high-throughput backends (<strong>FastAPI, Django, Spring Boot</strong>), responsive client interfaces (<strong>React 18, Flutter, Svelte 5</strong>), and secure cloud infrastructure with VPS deployments and payment integrations.
                 </p>
+              </div>
+
+              {/* Quick Metrics Badges */}
+              <div className="grid grid-cols-3 gap-3 pt-4">
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-extrabold text-blue-600">1.5+</div>
+                  <div className="text-xs font-semibold text-slate-600 mt-1">Years Experience</div>
+                </div>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-extrabold text-blue-600">3+</div>
+                  <div className="text-xs font-semibold text-slate-600 mt-1">Production Apps</div>
+                </div>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-extrabold text-blue-600">100%</div>
+                  <div className="text-xs font-semibold text-slate-600 mt-1">LLM Uptime Systems</div>
+                </div>
               </div>
             </div>
 
