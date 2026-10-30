@@ -59,7 +59,7 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      role: "Full Stack Developer",
+      role: "Associate Software Engineer",
       company: "Cloudrule Technologies Private Limited",
       location: "Madurai, India",
       period: "January 2026 – Present",
